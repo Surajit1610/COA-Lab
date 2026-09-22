@@ -1,0 +1,13 @@
+
+;Check: Positive or Negative Number
+
+MVI A, 85H
+ANI 80H
+JZ POSITIVE
+
+; Number is Negative
+HLT
+
+POSITIVE: MVI B,02H
+; Number is Positive
+HLT

@@ -1,0 +1,13 @@
+
+;Check: Odd or Even Number
+
+MVI A, 25H
+ANI 01H
+JZ EVEN
+
+; Number is Odd
+HLT
+
+EVEN: MVI B, 02H
+; Number is Even
+HLT
